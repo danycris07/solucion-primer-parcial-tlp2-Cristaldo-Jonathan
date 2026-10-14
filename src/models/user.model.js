@@ -13,6 +13,9 @@ export const UserModel = sequelize.define(
       allowNull: false,
       defaultValue: "developer",
     },
-  }
-  // TODO: 1. Activar la eliminación lógica (paranoid) en las opciones del modelo.
+  },
+  {
+    // TODO: 1. Activar la eliminación lógica (paranoid)
+    paranoid: true,
+  },
 );
